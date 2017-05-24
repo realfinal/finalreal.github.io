@@ -7,7 +7,7 @@ var selectedFile;
 
 $( document ).ready(function() {
 	$("#welcome").hide();
-	$("#uploadDiv").hide();
+	//$("#uploadDiv").hide();
 	
 	firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
