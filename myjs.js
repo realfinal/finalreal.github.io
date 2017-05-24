@@ -84,7 +84,7 @@ function uploadFile() {
     // $(".upload-group")[0].before("Success!");
      $("#uploadtext").html("upload success ");
   	$(".upload-group").hide();
-  	//window.location ="index.html"
+  	window.location ="index.html"
   
   
 });
