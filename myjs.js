@@ -20,7 +20,7 @@ $( document ).ready(function() {
 function signIn() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 	  
-	  var token = result.credential.accessToken;
+	  
 	 
 	  showWelcomeContainer();
 	
@@ -102,11 +102,7 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
 	 currentRow = document.createElement("div");
          $(currentRow).addClass("row");
          $("#contentHolder").append(currentRow);
-        /*if(i % 3 == 0){
-            currentRow = document.createElement("div");
-            $(currentRow).addClass("row");
-            $("#contentHolder").append(currentRow);
-        } */
+       
         
         var column = document.createElement("div");
     
