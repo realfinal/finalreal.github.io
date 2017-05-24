@@ -8,12 +8,12 @@ var selectedFile;
 $( document ).ready(function() {
 	$("#welcome").hide();
 //	$("#uploadDiv").hide();
-	
+	queryDatabase();
 	firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     var token = firebase.auth().currentUser.uid;
-    queryDatabase();
+   // queryDatabase();
     
   } else {
     // User is signed out.
