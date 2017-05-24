@@ -1,7 +1,4 @@
 
-
-
-
 var provider = new firebase.auth.GoogleAuthProvider();
 
 var user;
@@ -86,10 +83,6 @@ function uploadFile() {
 }
 
 
-
-
-
-
 function queryDatabase(){
 
 firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
@@ -100,19 +93,12 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     for (var i = 0; i< keys.length; i++){
         var currentObject = PostObject[keys[i]];
 	 currentRow = document.createElement("div");
-        // $(currentRow).addClass("row");
-         $("#contentshower").append(currentRow);
-       
-        
-        var column = document.createElement("div");
-    
-        var image = document.createElement("img");
+           $("#contentshower").append(currentRow);
+           var column = document.createElement("div");
+          var image = document.createElement("img");
         image.src = currentObject.url;
-        //$(image).addClass("contentImage");
-        var p = document.createElement("p");
+          var p = document.createElement("p");
         $(p).html(currentObject.caption);
-        //$(p).addClass("contentCaption");
-        
         $(column).append("<p><h4>comment:</h4></p>");
         $(column).append(p);
         $(column).append(image);
