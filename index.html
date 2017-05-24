@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Feng Mi's resume website for job hunting</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Feng Mi's Porject website</h1>
+        <p></p>
+
+
+        <p class="view"><h3>work hard makes perfect!</h3></p>
+        
+        <div class="container" >
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 >Welcome to my website</h2>
+        <h2 id="welcomeText"></h2>
+        
+        <button id = "login" type="button" class="btn btn-primary" onclick="signIn();"><i class="fa fa-google-plus"></i> Sign-In With Google</button>
+
+      </div>
+    </div>
+     </div><!-- /.container -->
+     
+     
+     
+     <div class="col-lg-6" id="uploadDiv">
+       <h2>Upload Comment:</h2>
+           <h3 id="uploadtext"></h3>
+          
+          <input type = "text" id = "imageCaption" class="upload-group" placeholder= "Write a comment">
+          <label class="upload-group">
+            upload picture
+            <input type ="file" class="upload-group" id="file">
+            </label>
+          <button  id = "uploadButton" class="upload-group" onclick="uploadFile()">SUBMIT</button>
+      </div>
+     
+     
+
+      </header>
+      <section>
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Personal dercription</h2>
+
+<p>My name is Feng Mi. I am a graduate student in the ECE deparment in the university of delaware. I have a good skills in web develop. I also know python and sql and I have use them to develop many projects. I want to find a internship this winter. Some of my projects I have developed is in the below and I hope you will like them.</p>
+
+
+
+
+ 
+ <h1>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects:</h1>
+
+<p><h4>The first project is Text-twist clone.</h4></p>
+<P>Just a basic stack word game. Very easy to understand so no other description. In project 1.5, we swap our project with another team and do a security audit of their code.</p> 
+<p></p><a href="https://github.com/harderbetter/Text-twist-clone" ><img src="picture/github.png">source code</a></P>
+
+ <p><h4>The second project is Basic Forum.</h4></p>
+ <P>This project need us to generate a forum system where a user can login, see a list of topics, see the messages under a topic, can add a message to any topic. A user should be able to delete one of their own messages and edit one of their own messages.
+</p> 
+<p></p><a href="https://github.com/harderbetter/basic-forum" ><img src="picture/github.png">source code</a></P>
+
+
+
+   <h1 >Friends comment:</h1>
+     <div class ="container" id="contentHolder">
+      
+  </div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
+<script>    
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDDQFA9XOLWpQSR8lEy2yR4PpgpVvrVkE8",
+    authDomain: "realfinal-ff265.firebaseapp.com",
+    databaseURL: "https://realfinal-ff265.firebaseio.com",
+    projectId: "realfinal-ff265",
+    storageBucket: "realfinal-ff265.appspot.com",
+    messagingSenderId: "756310318827"
+  };
+    firebase.initializeApp(config);
+</script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+ 
+  <script type="text/javascript" src="myjs.js"></script>
+
+
+
+
+    
+  </body>
+</html>
