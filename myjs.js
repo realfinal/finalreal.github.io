@@ -100,7 +100,7 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     for (var i = 0; i< keys.length; i++){
         var currentObject = PostObject[keys[i]];
 	 currentRow = document.createElement("div");
-         $(currentRow).addClass("row");
+        // $(currentRow).addClass("row");
          $("#contentshower").append(currentRow);
        
         
