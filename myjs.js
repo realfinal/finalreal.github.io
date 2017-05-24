@@ -32,8 +32,8 @@ function signIn() {
 	  // This gives you a Google Access Token. You can use it to access the Google API.
 	  var token = result.credential.accessToken;
 	  // The signed-in user info.
-	  user = result.user;
-	  console.log(user.displayName);
+	  //user = result.user;
+	  //console.log(user.displayName);
 	  
 	  showWelcomeContainer();
 	  // ...
@@ -54,8 +54,8 @@ function signIn() {
 function showWelcomeContainer() {
 	
 	
-//	$("#welcomeText").html("Hello, you have already signed in" );
-	$("#welcomeText").html("Hello, " + user.displayName);	
+	$("#welcomeText").html("Hello, you have already signed in" );
+	
 	$("#login").hide();
 	$("#uploadDiv").show();
 };
