@@ -99,12 +99,14 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     var currentRow;
     for (var i = 0; i< keys.length; i++){
         var currentObject = PostObject[keys[i]];
-        
-        if(i % 3 == 0){
+	 currentRow = document.createElement("div");
+         $(currentRow).addClass("row");
+         $("#contentHolder").append(currentRow);
+        /*if(i % 3 == 0){
             currentRow = document.createElement("div");
             $(currentRow).addClass("row");
             $("#contentHolder").append(currentRow);
-        } 
+        } */
         
         var column = document.createElement("div");
     
