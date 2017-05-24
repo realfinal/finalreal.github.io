@@ -54,8 +54,8 @@ function signIn() {
 function showWelcomeContainer() {
 	
 	
-	$("#welcomeText").html("Hello, you have already signed in" );
-//	$("#welcomeText").html("Hello, " + user.displayName);	
+//	$("#welcomeText").html("Hello, you have already signed in" );
+	$("#welcomeText").html("Hello, " + user.displayName);	
 	$("#login").hide();
 	$("#uploadDiv").show();
 };
