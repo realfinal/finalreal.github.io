@@ -123,7 +123,7 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
         $(p).html(currentObject.caption);
         $(p).addClass("contentCaption");
         
-        $(col).append("<p><b>comment:</b></p>");
+        $(col).append("<p><h4>comment:</h4></p>");
         $(col).append(p);
         $(col).append(image);
         $(currentRow).append(col);
