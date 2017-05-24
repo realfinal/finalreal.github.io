@@ -108,10 +108,10 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     
         var image = document.createElement("img");
         image.src = currentObject.url;
-        $(image).addClass("contentImage");
+        //$(image).addClass("contentImage");
         var p = document.createElement("p");
         $(p).html(currentObject.caption);
-        $(p).addClass("contentCaption");
+        //$(p).addClass("contentCaption");
         
         $(column).append("<p><h4>comment:</h4></p>");
         $(column).append(p);
