@@ -13,7 +13,7 @@ $( document ).ready(function() {
   if (user) {
     // User is signed in.
     var token = firebase.auth().currentUser.uid;
-    queryDatabase(token);
+    queryDatabase();
     
   } else {
     // User is signed out.
@@ -111,7 +111,7 @@ function uploadFile() {
 
 
 
-function queryDatabase(token){
+function queryDatabase(){
 
 firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     var PostObject = snapshot.val();
