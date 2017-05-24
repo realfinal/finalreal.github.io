@@ -94,7 +94,7 @@ function queryDatabase(){
 
 firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
     var PostObject = snapshot.val();
-    console.log(PostObject);
+    
     var keys = Object.keys(PostObject);
     var currentRow;
     for (var i = 0; i< keys.length; i++){
@@ -106,19 +106,19 @@ firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
             $("#contentHolder").append(currentRow);
         } 
         
-        var col = document.createElement("div");
+        var column = document.createElement("div");
     
         var image = document.createElement("img");
         image.src = currentObject.url;
         $(image).addClass("contentImage");
-        var p = document.createElement("p");
-        $(p).html(currentObject.caption);
-        $(p).addClass("contentCaption");
+        var paragraph = document.createElement("paragraph");
+        $(paragraph).html(currentObject.caption);
+        $(paragraph).addClass("contentCaption");
         
-        $(col).append("<p><h4>comment:</h4></p>");
-        $(col).append(p);
-        $(col).append(image);
-        $(currentRow).append(col);
+        $(column).append("<p><h4>comment:</h4></p>");
+        $(column).append(paragraph);
+        $(column).append(image);
+        $(currentRow).append(column);
         
     }
     
