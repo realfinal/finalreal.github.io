@@ -1,3 +1,13 @@
+
+//Here are the code reference:
+//https://www.youtube.com/watch?v=6Q55NlRwNnw
+//https://www.youtube.com/watch?v=4ZCy1AK7x4I
+
+
+
+
+
+
 var provider = new firebase.auth.GoogleAuthProvider();
 
 var user;
